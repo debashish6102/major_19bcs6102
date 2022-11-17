@@ -1,11 +1,8 @@
 
 from flask import Flask, render_template, request, Blueprint, url_for, send_file
-import cv2
-from path import Path
 import os, io
-# from google.api_core.protobuf_helpers import get_messages
 from google.cloud import vision
-from collections.abc import Mapping
+
 
 app = Flask(__name__)
 
